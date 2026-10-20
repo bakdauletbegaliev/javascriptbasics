@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics | JS Study Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/intro.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="logo" href="index.html"><span class="logo-box">JS</span> Study Lab</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" class="active" aria-current="page">Basics</a>
+        <a href="dom.html">DOM</a>
+        <a href="events.html">Events</a>
+        <a href="todo.html">To-Do List</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+    <section class="intro">
+      <p class="small-heading">FRONT-END DEVELOPMENT / ASSIGNMENT 5</p>
+      <h1>JavaScript Basics</h1>
+      <p>This small website demonstrates basic JavaScript, DOM and events. Use the menu above to open each part of the assignment.</p>
+      <p class="student"><strong>Student:</strong> Begaliev Bakdaulet &nbsp; · &nbsp; <strong>Group:</strong> SE2526</p>
+    </section>
+
+    <div class="section-title">
+      <h2>Part 1 — Introduction</h2>
+      <p>Open the browser console with <strong>F12 → Console</strong>.</p>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <span class="task-label">TASK 0</span>
+        <h3>First Script</h3>
+        <p>This page connects to <code>intro.js</code>. When the page opens, JavaScript displays an alert and prints my name and group in the console.</p>
+        <button id="helloButton" type="button">Show greeting again</button>
+      </section>
+
+      <section class="card">
+        <span class="task-label">TASK 1</span>
+        <h3>Variables and Operators</h3>
+        <p>Practice strings, numbers, booleans, arithmetic operations and joining strings together.</p>
+        <button id="runVariables" type="button">Show results</button>
+        <div class="output" id="variablesResult" aria-live="polite">Results will appear here.</div>
+      </section>
+    </div>
+    <p class="next-link">Next: <a href="dom.html">DOM Manipulation →</a></p>
+
+  </main>
+  <footer class="footer">
+    <div class="container">Assignment #5 · Begaliev Bakdaulet · SE2526</div>
+  </footer>
+</body>
+</html>
