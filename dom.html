@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation | JS Study Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/dom.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="logo" href="index.html"><span class="logo-box">JS</span> Study Lab</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Basics</a>
+        <a href="dom.html" class="active" aria-current="page">DOM</a>
+        <a href="events.html">Events</a>
+        <a href="todo.html">To-Do List</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+    <div class="page-title">
+      <p class="small-heading">PART 2 / TASKS 2–4</p>
+      <h1>DOM Manipulation</h1>
+      <p>JavaScript can find and change HTML elements on a page.</p>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <span class="task-label">TASK 2</span>
+        <h3>Changing Content</h3>
+        <p>Click the button to change the paragraph text.</p>
+        <div class="example"><p id="changeableMessage">This is the original text.</p></div>
+        <button id="changeTextButton" type="button">Change text</button>
+        <button id="resetTextButton" class="secondary" type="button">Reset</button>
+      </section>
+
+      <section class="card">
+        <span class="task-label">TASK 3</span>
+        <h3>Changing Styles</h3>
+        <p>Change the background color and font size using JavaScript.</p>
+        <div class="style-box" id="styleBox">Hello! Change my style.</div>
+        <button id="colorButton" type="button">Change color</button>
+        <button id="sizeButton" class="secondary" type="button">Bigger text</button>
+      </section>
+    </div>
+
+    <section class="card wide-card">
+      <span class="task-label">TASK 4</span>
+      <h3>Creating and Removing Elements</h3>
+      <p>Each click creates a new list item or removes the last one.</p>
+      <ul id="demoList" class="simple-list">
+        <li>First item</li>
+        <li>Second item</li>
+      </ul>
+      <button id="addItemButton" type="button">Add Item</button>
+      <button id="removeItemButton" class="secondary" type="button">Remove Item</button>
+      <p class="message" id="listMessage" aria-live="polite"></p>
+    </section>
+    <p class="next-link">Next: <a href="events.html">Events and Calculator →</a></p>
+
+  </main>
+  <footer class="footer">
+    <div class="container">Assignment #5 · Begaliev Bakdaulet · SE2526</div>
+  </footer>
+</body>
+</html>
