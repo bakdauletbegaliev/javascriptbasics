@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events and Calculator | JS Study Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/events.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="logo" href="index.html"><span class="logo-box">JS</span> Study Lab</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Basics</a>
+        <a href="dom.html">DOM</a>
+        <a href="events.html" class="active" aria-current="page">Events</a>
+        <a href="todo.html">To-Do List</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+    <div class="page-title">
+      <p class="small-heading">PART 3 / TASKS 5–7</p>
+      <h1>Events and Calculator</h1>
+      <p>Mouse and keyboard events make a webpage interactive.</p>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <span class="task-label">TASK 5</span>
+        <h3>Mouse Events</h3>
+        <p>Move your mouse over the box, then move it away.</p>
+        <div class="hover-box" id="hoverBox">Hover over me!</div>
+      </section>
+
+      <section class="card">
+        <span class="task-label">TASK 6</span>
+        <h3>Keyboard Events</h3>
+        <label for="liveInput">Type something:</label>
+        <input id="liveInput" type="text" placeholder="Start typing...">
+        <div class="output" id="liveOutput" aria-live="polite">Your text will appear here.</div>
+      </section>
+    </div>
+
+    <section class="card wide-card calculator">
+      <span class="task-label">TASK 7</span>
+      <h3>Basic Calculator</h3>
+      <p>Enter two numbers and select an operation.</p>
+      <div class="input-row">
+        <div><label for="firstNumber">First number</label><input id="firstNumber" type="number" step="any" placeholder="e.g. 12"></div>
+        <div><label for="secondNumber">Second number</label><input id="secondNumber" type="number" step="any" placeholder="e.g. 4"></div>
+      </div>
+      <div class="button-group">
+        <button id="addButton" type="button">+</button>
+        <button id="subtractButton" type="button">−</button>
+        <button id="multiplyButton" type="button">×</button>
+        <button id="divideButton" type="button">÷</button>
+      </div>
+      <div class="output result-output">Result: <strong id="calculatorResult" aria-live="polite">—</strong></div>
+    </section>
+    <p class="next-link">Next: <a href="todo.html">To-Do List →</a></p>
+
+  </main>
+  <footer class="footer">
+    <div class="container">Assignment #5 · Begaliev Bakdaulet · SE2526</div>
+  </footer>
+</body>
+</html>
