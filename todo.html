@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List | JS Study Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/todo.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="logo" href="index.html"><span class="logo-box">JS</span> Study Lab</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Basics</a>
+        <a href="dom.html">DOM</a>
+        <a href="events.html">Events</a>
+        <a href="todo.html" class="active" aria-current="page">To-Do List</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+
+    <div class="page-title">
+      <p class="small-heading">PART 4 / TASK 8</p>
+      <h1>My To-Do List</h1>
+      <p>A simple daily task list made with an array and DOM methods.</p>
+    </div>
+
+    <section class="card todo-card">
+      <span class="task-label">TASK 8 — MINI PROJECT</span>
+      <h3>Add a task</h3>
+      <div class="todo-input-row">
+        <input id="newTask" type="text" placeholder="e.g. Review JavaScript" aria-label="New task" maxlength="100">
+        <button id="addTaskButton" type="button">Add Task</button>
+      </div>
+      <p id="todoMessage" class="message" aria-live="polite"></p>
+
+      <div class="list-header">
+        <h3>My tasks</h3>
+        <span id="taskCount">0 tasks</span>
+      </div>
+      <p id="emptyMessage" class="empty-note">No tasks yet. Add your first task above.</p>
+      <ul id="taskList" class="todo-list"></ul>
+      <p class="hint">Tasks are saved only in a JavaScript array. Refreshing the page clears the list.</p>
+    </section>
+    <p class="next-link">Back: <a href="index.html">JavaScript Basics →</a></p>
+
+  </main>
+  <footer class="footer">
+    <div class="container">Assignment #5 · Begaliev Bakdaulet · SE2526</div>
+  </footer>
+</body>
+</html>
